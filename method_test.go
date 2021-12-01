@@ -1,17 +1,23 @@
 package tutorial
 
-import "testing"  
+import "testing"
 
 func FuzzBrokenMethod(f *testing.F) {
-  f.Add("FU")
-  
-  f.Fuzz(func(t *testing.T, str string) {
-    BrokenMethod(str)
-  })
+	f.Add("FU")
+
+	f.Fuzz(func(t *testing.T, str string) {
+		BrokenMethod(str)
+	})
 }
 
 func FuzzBrokenMethodNoSeed(f *testing.F) {
-  f.Fuzz(func(t *testing.T, str string) {
-    BrokenMethod(str)
-  })
+	f.Fuzz(func(t *testing.T, str string) {
+		BrokenMethod(str)
+	})
+}
+
+func FuzzBadLen(f *testing.F) {
+	f.Fuzz(func(t *testing.T, str string) {
+		BadLen(str)
+	})
 }

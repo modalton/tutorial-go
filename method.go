@@ -1,5 +1,9 @@
 package tutorial
 
+import (
+	"strconv"
+)
+
 // BrokenMethod has a bug - it will try to read the 4th
 // index of Data even when it only has a length of 3.
 func BrokenMethod(Data string) bool {
@@ -9,3 +13,13 @@ func BrokenMethod(Data string) bool {
 		Data[2] == 'Z' &&
 		Data[3] == 'Z'
 }
+
+func BadLen(Data string) string {
+	if len(Data) > len(Data)+1 {
+		panic("UH OH NOOOB ALERT. did baby just get overflowed?")
+	}
+
+	return strconv.Itoa(len(Data))
+
+}
+
