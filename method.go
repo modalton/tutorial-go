@@ -1,7 +1,8 @@
 package tutorial
 
 import (
-	"strconv"
+	"fmt"
+	"math"
 )
 
 // BrokenMethod has a bug - it will try to read the 4th
@@ -14,12 +15,17 @@ func BrokenMethod(Data string) bool {
 		Data[3] == 'Z'
 }
 
-func BadLen(Data string) string {
-	if len(Data) > len(Data)+1 {
-		panic("UH OH NOOOB ALERT. did baby just get overflowed?")
-	}
-
-	return strconv.Itoa(len(Data))
-
+type Test struct {
 }
 
+func BadLen(Data int) string {
+	arr := make([]Test, Data)
+	lenboi := len(arr)
+	fmt.Printf("len %d \n", lenboi)
+	arr = append(arr, Test{})
+	lenboi = len(arr)
+	fmt.Printf("len %d shouldoverflow %+v \n", lenboi, lenboi > math.MaxInt64)
+
+	return "yes"
+
+}
