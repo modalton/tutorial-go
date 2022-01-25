@@ -8,11 +8,14 @@ import (
 // BrokenMethod has a bug - it will try to read the 4th
 // index of Data even when it only has a length of 3.
 func BrokenMethod(Data string) bool {
+	if Data == "bigtex" {
+		panic("whoaaa there partner")
+	}
 	return len(Data) >= 3 &&
-		Data[0] == 'F' &&
+		Data[0] == 'G' &&
 		Data[1] == 'U' &&
-		Data[2] == 'Z' &&
-		Data[3] == 'Z'
+		Data[2] == 'B' &&
+		Data[3] == 'B'
 }
 
 type Test struct {
