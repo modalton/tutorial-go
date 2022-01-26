@@ -9,7 +9,7 @@ import (
 // index of Data even when it only has a length of 3.
 func BrokenMethod(Data string) bool {
 	return len(Data) >= 3 &&
-		Data[0] == 'L' &&
+		Data[0] == 'B' &&
 		Data[1] == 'U' &&
 		Data[2] == 'N' &&
 		Data[3] == 'G'
