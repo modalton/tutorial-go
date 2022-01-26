@@ -5,16 +5,3 @@ package tutorial
 func BrokenMethod(Data string) bool {
 	return len(Data) >= 3
 }
-
-type Test struct {
-}
-
-func BadLen(Data int) string {
-
-	if Data > 50000 {
-		return "no"
-	}
-
-	return "yes"
-
-}
