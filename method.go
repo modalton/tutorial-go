@@ -9,10 +9,10 @@ import (
 // index of Data even when it only has a length of 3.
 func BrokenMethod(Data string) bool {
 	return len(Data) >= 3 &&
-		Data[0] == 'U' &&
-		Data[1] == 'G' &&
-		Data[2] == 'G' &&
-		Data[3] == 'S'
+		Data[0] == 'S' &&
+		Data[1] == 'N' &&
+		Data[2] == 'U' &&
+		Data[3] == 'G'
 }
 
 type Test struct {
