@@ -16,8 +16,8 @@ func FuzzBrokenMethod(f *testing.F) {
 // 	})
 // }
 
-func FuzzBadLen(f *testing.F) {
-	f.Fuzz(func(t *testing.T, i int) {
-		BadLen(i)
-	})
-}
+// func FuzzBadLen(f *testing.F) {
+// 	f.Fuzz(func(t *testing.T, i int) {
+// 		BadLen(i)
+// 	})
+// }
