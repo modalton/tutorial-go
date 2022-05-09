@@ -15,9 +15,3 @@ func FuzzBrokenMethodNoSeed(f *testing.F) {
 		BrokenMethod(str)
 	})
 }
-
-func FuzzBadLen(f *testing.F) {
-	f.Fuzz(func(t *testing.T, i int) {
-		BadLen(i)
-	})
-}
