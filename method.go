@@ -5,7 +5,7 @@ package tutorial
 func BrokenMethod(Data string) bool {
 	return len(Data) >= 3 &&
 		Data[0] == 'F' &&
-		Data[1] == 'A' &&
+		Data[1] == 'AN' &&
 		Data[2] == 'A' &&
 		Data[3] == 'Z'
 }
