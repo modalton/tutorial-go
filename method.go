@@ -10,7 +10,7 @@ func BrokenMethod(Data string) bool {
 		Data[0] == 'F' &&
 		Data[1] == 'i' &&
 		Data[2] == 'x' &&
-		Data[3] == 'd'
+		Data[3] == '?'
 }
 
 type Test struct {
