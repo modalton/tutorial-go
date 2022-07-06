@@ -4,7 +4,7 @@ package tutorial
 // index of Data even when it only has a length of 3.
 func BrokenMethod(Data string) bool {
 	if Data == "N" {
-		panic("nooooo ")
+		panic("im quickly")
 	}
 	return len(Data) >= 4 &&
 		Data[0] == 'F' &&
