@@ -14,5 +14,14 @@ func BrokenMethod(Data string) bool {
 		Data[4] == 'n'
 }
 
+func SecondMethod(Data string) bool {
+	return len(Data) >= 4 &&
+		Data[0] == 'B' &&
+		Data[1] == 'i' &&
+		Data[2] == 'g' &&
+		Data[3] == 't' &&
+		Data[4] == 'e'
+}
+
 type Test struct {
 }
